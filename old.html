@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="/">Job Request</a></li>
+        <li><a href="/form-one">Form 1</a></li>
+        <li><a href="/form-two/">Form 2</a></li>
+        <li><a href="/form-three/">Form 3</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <div class="body">
+    <div class="grid">
+
+      <div class="grid-item">
+        <div class="card">
+          <div class="card-content">
+          <h1>Form 1</h1>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <div class="card">
+        <form
+          action="https://formspree.io/f/myyonjkr"
+          method="POST"
+        >
+          <label>
+            Your email
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your location
+            <input type="location" name="location">
+          </label>
+          <label>
+            Service you are interested in
+            <input type="request" name="request">
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>

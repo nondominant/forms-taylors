@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webIQ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+<input type="checkbox" id="hamButton" />
+<label for="hamButton" class="ham-button-label">
+    <div class="ham-bar"></div>
+    <div class="ham-bar"></div>
+    <div class="ham-bar"></div>
+    <div class="ham-bar"></div>
+</label>
+<div class="off-screen-container">
+    <a class="rela-block logo" href="https://laundrytechsolutions.com"></a>
+    <div class="rela-block side-block"><a class="abs-cent-text" href='/'>Job Request</a></div>
+    <div class="rela-block side-block"><a class="abs-cent-text" href='/form-one'>Form One</a></div>
+    <div class="rela-block side-block"><a class="abs-cent-text" href='/form-two'>Form Two</a></div>
+    <div class="rela-block side-block"><a class="abs-cent-text" href='/form-three'>Form Three</a></div>
+    <p class="side-bottom-text">Select the form you need<br>for the request you're making,<br>fill it out, and submit!<br>that's it</p>
+
+
+</div>
+
+<div class="page-container">
+            <div class="form-style-10">
+          <form
+            action="https://formspree.io/f/myyonjkr"
+            method="POST"
+            id="job"
+            >
+              <div class="section">Name & Email</div>
+              <div class="inner-wrap">
+                  <label>Name <input type="text" name="name" /></label>
+                  <label>Email <input type="text" name="email"/></label>
+              </div>
+              <div class="section">Job Request</div>
+              <div class="inner-wrap">
+                  <label>Request Description<input type="text" name="request_description" /></label>
+                  <label>Location<input type="text" name="location" /></label>
+              </div>
+              <div class="section">Date & Approval</div>
+                  <div class="inner-wrap">
+                  <label>Date Required<input type="date" name="date" /></label>
+                  <label>Approved by (Name)<input type="text" name="approved_by" /></label>
+              </div>
+              <button class="push_button blue" form="job" formaction="https://formspree.io/f/myyonjkr">Submit Standard</button>
+              <button class="push_button red" form="job" formaction="https://formspree.io/f/myyonjkr">Submit High Priority</button> 
+              <input type="hidden" id="requestId" name="requestId" value="34657">
+          </form>
+            </div>
+
+</div>
+
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  </body>
+  <script>
+    function createUUID() {
+      var s = [];
+      var hexDigits = "0123456789abcdef";
+      for (var i = 0; i < 36; i++) {
+          s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+      }
+      s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
+      s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
+      s[8] = s[13] = s[18] = s[23] = "-";
+      return s.join("");
+    }
+    function setid() {
+      let uuid = createUUID();
+      let elem = document.getElementById('requestId');
+          elem.value = `</body><a>click</a>`;
+    }
+    window.onload = setid;
+  </script>
+</html>
