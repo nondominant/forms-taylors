@@ -183,122 +183,6 @@ a, a:hover, a:focus, a:active {
 
 
 
-
-
-.push_button {
-	position: relative;
-	width:220px;
-	height:40px;
-	text-align:center;
-  font-size: 16px;
-	color:#FFF;
-	text-decoration:none;
-	line-height:43px;
-  font-family: 'Raleway', Arial, sans-serif;
-	display: block;
-	margin: 30px;
-}
-.push_button:before {
-	background:#f0f0f0;
-	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
-	
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	
-	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
-	-moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
-	box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
-	
-	position: absolute;
-	content: "";
-	left: -6px; right: -6px;
-	top: -6px; bottom: -10px;
-	z-index: -1;
-}
-
-.push_button:active {
-	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
-	top:5px;
-}
-.push_button:active:before{
-	top: -11px;
-	bottom: -5px;
-	content: "";
-}
-
-.red {
-	text-shadow:-1px -1px 0 #A84155;
-	background: #ff0d00;
-	border:1px solid #ff0d00;
-	
-	background-image:-webkit-linear-gradient(top, #ff5900, #ff0d00);
-	background-image:-moz-linear-gradient(top, #ff5900, #ff0d00);
-	background-image:-ms-linear-gradient(top, #ff5900, #ff0d00);
-	background-image:-o-linear-gradient(top, #ff5900, #ff0d00);
-	background-image:linear-gradient(to bottom, #ff5900, #ff0d00);
-	
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	
-	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
-	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
-	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
-}
-
-.red:hover {
-	background: #ff5900;
-	background-image:-webkit-linear-gradient(top, #ff0d00, #ff5900);
-	background-image:-moz-linear-gradient(top, #ff0d00, #ff5900);
-	background-image:-ms-linear-gradient(top, #ff0d00, #ff5900);
-	background-image:-o-linear-gradient(top, #ff0d00, #ff5900);
-	background-image:linear-gradient(top, #ff0d00, #ff5900);
-}
-.blue {
-	text-shadow:-1px -1px 0 #2C7982;
-	background: var(--background-dark);
-	border:1px solid #379AA4;
-	background-image:linear-gradient(top, var(--background-light), var(--background-dark));
-	background-image:-webkit-linear-gradient(top, var(--background-light), var(--background-dark));
-	background-image:-moz-linear-gradient(top, var(--background-light), var(--background-dark));
-	background-image:-ms-linear-gradient(top, var(--background-light), var(--background-dark));
-	background-image:-o-linear-gradient(top, var(--background-light), var(--background-dark));
-	
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	
-	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
-	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
-	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
-}
-
-.blue:hover {
-	background: var(--background-light);
-	background-image:linear-gradient(top, var(--background-dark), var(--background-light));
-	background-image:-webkit-linear-gradient(top, var(--background-dark), var(--background-light));
-	background-image:-moz-linear-gradient(top, var(--background-dark), var(--background-light));
-	background-image:-ms-linear-gradient(top, var(--background-dark), var(--background-light));
-	background-image:-o-linear-gradient(top, var(--background-dark), var(--background-light));
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .rela-block {
   display: block;
   position: relative;
@@ -869,5 +753,45 @@ a, a:hover, a:focus, a:active {
     transform: translateY(-700px) rotate(600deg);
     opacity: 0;
   }
+}
+
+
+
+
+
+.blue {
+  background-color: rgba(130,110,255,1);
+   }
+
+
+.red {
+  background-color: rgba(255,100,0,1);
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184px;
+  height: 42px;
+  margin: 1rem;
+  border-radius: 3px;
+  border: none;
+  transition-property: border;
+  transition-duration: 3s;
+}
+.btn-text {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+.google-btn:hover {
+  border: 1px solid white;
+
+}
+.google-btn:active {
+  filter: brightness(150%);
+
 }
 
